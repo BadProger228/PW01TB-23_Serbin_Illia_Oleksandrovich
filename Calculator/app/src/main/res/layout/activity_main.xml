@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculator"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/H_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="H"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/C_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="C"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/H_id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/S_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="S"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/C_id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/N_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="N"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/S_id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/O_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="O"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/N_id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/W_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="W"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/O_id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/APid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="A"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/W_id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <Button
+        android:id="@+id/Calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        app:layout_constraintTop_toBottomOf="@id/APid"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:id="@+id/Result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@id/Calculate"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
